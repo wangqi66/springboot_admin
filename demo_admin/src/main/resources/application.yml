@@ -12,3 +12,15 @@ spring:
     password: root
     driver-class-name: com.mysql.jdbc.Driver
 #    type: com.zaxxer.hikari.HikariDataSource
+
+    druid:
+      filter: stat,wall
+      #StatViewServlet配置
+      stat-view-servlet.enabled: true #是否启用StatViewServlet（监控页面）默认值为false
+      stat-view-servlet:
+        login-username: admin
+        login-password: admin
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: '*.js,*.gif,*.jpg,*.png,* .css,*.ico, /druid/*'

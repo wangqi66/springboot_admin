@@ -11,14 +11,14 @@ import java.util.Map;
 @SpringBootTest
 class DemoAdminApplicationTests {
 
-    @Autowired
-    JdbcTemplate jdbcTemplate;
-    @Test
-    void contextLoads() {
-//        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from account",);
-        Long o = jdbcTemplate.queryForObject("select count(*) from account", long.class);
-        System.out.println(o);
-
-    }
+//    @Autowired
+//    JdbcTemplate jdbcTemplate;
+//    @Test
+//    void contextLoads() {
+////        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from account",);
+//        Long o = jdbcTemplate.queryForObject("select count(*) from account", long.class);
+//        System.out.println(o);
+//
+//    }
 
 }
